@@ -83,8 +83,8 @@ static const char *level_colors[] = {"\x1b[94m", "\x1b[36m", "\x1b[32m",
 #endif
 
 static void stdout_callback(log_event *ev) {
-    char buf[16];
-    buf[strftime(buf, sizeof(buf), "%H:%M:%S", ev->time)] = '\0';
+    char buf[22];
+    buf[strftime(buf, sizeof(buf), "[%Y-%m-%d %H:%M:%S]", ev->time)] = '\0';
 #ifdef LOGC_USE_COLOR
     fprintf(ev->udata, "%s %s%-5s\x1b[0m \x1b[90m%s:%d:\x1b[0m ", buf,
             level_colors[ev->level], level_strings[ev->level], ev->file,

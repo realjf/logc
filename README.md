@@ -1,2 +1,3 @@
 # logc
-A simple logging library in c
+
+A simple header-only logging library in c

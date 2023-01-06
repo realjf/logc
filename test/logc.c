@@ -8,6 +8,6 @@ int main() {
 
     char *ver = LOGC_VERSION;
     printf("%s", ver);
-    // free(ver);
+    free(ver);
     return 0;
 }

@@ -1,6 +1,6 @@
 # logc
 
-A simple header-only logging library in c
+A simple header-only logging library in C
 
 ### Usage
 
